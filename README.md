@@ -1,16 +1,59 @@
-# project
+# DAYWON
 
-A new Flutter project.
+## 프로젝트 소개
 
-## Getting Started
+> 대규모 언어 모델(LLM)을 활용하여 금융 학습 컨텐츠를 자동 생성하고, 이를 모바일 애플리케이션을 통해 사용자에게 제공하는 서비스입니다.
 
-This project is a starting point for a Flutter application.
+### DAYWON을 개발하게 된 계기
 
-A few resources to get you started if this is your first Flutter project:
+> DAYWON은 금융 지식을 쉽고 효과적으로 습득할 수 있도록 돕는 서비스입니다.<br>단순한 정보 전달이 아니라, 다양한 형식의 컨텐츠를 활용한 학습과 실생활 예시 문제를 통해 금융 문맹 해결에 기여합니다.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 주요 기능 소개
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 📌 학습할 카테고리를 선택할 수 있습니다
+
+> 사용자는 학습하고자 하는 금융 카테고리를 선택하여 학습을 시작할 수 있습니다.
+
+![카테고리선택](/readMe/카테고리선택.png)
+
+### 📌 개념과 사례를 학습할 수 있습니다
+
+> 선택한 금융 카테고리에 대한 핵심 개념을 학습한 후, 실생활에서 적용할 수 있는 사례를 숏폼 형식으로 제공합니다.
+
+![학습](/readMe/학습.png)
+
+### 📌 문제를 풀고 심화된 학습을 할 수 있습니다
+
+> 학습한 내용을 기반으로 실생활과 관련된 문제를 풀고, 해설을 제공받아 개념을 이해하고 적용시켜볼 수 있습니다.
+
+![문제풀이](/readMe/문제풀이.png)
+
+## 시스템 아키텍처
+
+> DAYWON의 시스템은 LLM을 활용한 컨텐츠 생성과 모바일 기반 학습 경험을 원활하게 제공하도록 다음과 같이 설계되었습니다.
+
+### 사용자
+
+사용자는 모바일 애플리케이션을 통해 금융 학습 컨텐츠를 이용한다.
+
+### 모바일 애플리케이션
+
+모바일 애플리케이션은 사용자와 상호작용하며 웹 서버와 데이터 통신을 진행한다.
+
+### 웹 서버
+
+웹 서버는 데이터베이스와 LLM 서비스와 통신을 한다.
+
+### 데이터 베이스
+
+데이터 베이스는 사용자 데이터와 LLM을 통해 생성된 컨텐츠를 관리한다.
+
+### 학습 컨텐츠 자동 생성 모델(LLM)
+
+LLM을 활용하여 학습 컨텐츠가 자동 생성되며 관리자의 요청에 따라 맞춤형 컨텐츠를 생성한다.
+
+![시스템아키텍처](/readMe/시스템아키텍처.png)
+
+## 기술 스택
+
+![기술 스택](/readMe/기술스택.png)
